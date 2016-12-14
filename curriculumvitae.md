@@ -3,4 +3,6 @@ layout: document
 title: Curriculum
 permalink: /cv/
 ---
-<embed src="../assets/curriculumvitae-ENG.pdf" type="application/pdf" height="1024">
+<div style="width:100%;height:100%">
+<embed src="../assets/curriculumvitae-ENG.pdf" type="application/pdf">
+</div>
