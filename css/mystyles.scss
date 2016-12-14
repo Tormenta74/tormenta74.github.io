@@ -13,6 +13,17 @@
     width:100%;
     text-align: center;
 
+    * button {
+        font-size:175%;
+        width:100%;
+        height:100%;
+        border-width:0;
+        background-color:inherit;
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
     > ul {
         width:100%;
         list-style: none;
@@ -34,57 +45,50 @@
             &:hover {
                 background: #444;
             }
-            
-            > a {
-                text-decoration:none;
+
+            button {
                 color: #EEE;
             }
         }
-        
-        li a {
-            font-size: 175%;
-        }
+
     }
 }
 
-
-
 ul.drop-menu {
+    list-style-type:none;
     position:absolute;
     top:100%;
     left:0%;
     width:100%;
     padding:0;
     margin:0;
+    background: #33F;
 
     li {
-        background: #EEE;
-
-        a {
+        button {
+            line-height: 65px;
             color:#001;
-            text-decoration:none;
         }
         &:hover {
             background: #AAA;
         }
         &:last-child {
             border-radius: 0px 0px 5px 5px;
+            overflow: hidden;
         }
     }
 }
 
 // Default Trigger    
-ul.drop-menu li {
+ul.drop-menu li button {
     display: none; // HIDE
 }
 
-li:hover > ul.drop-menu li {
+li:hover > ul.drop-menu li button {
     display: block; // SHOW
 } 
 
-
-
-// MENU 1 ---------------
+// Animations
 
 embed {
     position:absolute;
