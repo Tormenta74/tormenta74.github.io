@@ -1,0 +1,38 @@
+---
+# My own styles
+---
+
+/// 
+
+#navigate {
+    display: block;
+    width: 100%;
+    font-size: 175%;
+    ul {
+        list-style-type:none;
+        width:100%;
+        margin:0;
+        padding:0;
+        li {
+            a {
+                background-color:#333333;
+                color:#EEEDDD;
+                height:40px;
+                width:25%;
+                text-decoration:none;
+                display:flex;
+                float:left;
+                align-items:center;
+                justify-content:center;
+                &:hover {
+                    background-color: #444555;
+                }
+            }
+        }
+    }
+} 
+
+embed {
+    width:100%;
+    margin:0 auto;
+}

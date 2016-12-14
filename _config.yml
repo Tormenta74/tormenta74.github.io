@@ -1,0 +1,24 @@
+# Access in the templates via {{ site.variablename }}.
+title: Shameless Jekyll Edit W.I.P.
+email: diego.sainzdemedrano@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+    A work in progress page using Jekyll. As of right now, this is merely an investigation
+    project used to better understand the Jekyll way. Expect changes in the future (including
+    a post serving as documentation for the final application I am now building on Rails and
+    how I integrated Jekyll blogging with it).
+baseurl: "/" 
+#url: ""
+github_username:  Tormenta74
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+    sass_dir: _sass
+    
