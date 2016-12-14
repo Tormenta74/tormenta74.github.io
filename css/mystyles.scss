@@ -10,32 +10,81 @@
 }
 
 #navigate {
-    display: block;
-    width: 100%;
-    font-size: 175%;
-    ul {
-        list-style-type:none;
+    width:100%;
+    text-align: center;
+
+    > ul {
         width:100%;
-        margin:0;
-        padding:0;
-        li {
-            a {
-                background-color:#333333;
-                color:#EEEDDD;
-                height:40px;
-                width:25%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        background: #333;
+
+        > li {
+            float: left;
+            width: 25%;
+            height: 65px;
+            line-height: 65px;
+            position: relative;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                background: #444;
+            }
+            
+            > a {
                 text-decoration:none;
-                display:flex;
-                float:left;
-                align-items:center;
-                justify-content:center;
-                &:hover {
-                    background-color: #444555;
-                }
+                color: #EEE;
             }
         }
+        
+        li a {
+            font-size: 175%;
+        }
     }
+}
+
+
+
+ul.drop-menu {
+    position:absolute;
+    top:100%;
+    left:0%;
+    width:100%;
+    padding:0;
+    margin:0;
+
+    li {
+        background: #EEE;
+
+        a {
+            color:#001;
+            text-decoration:none;
+        }
+        &:hover {
+            background: #AAA;
+        }
+        &:last-child {
+            border-radius: 0px 0px 5px 5px;
+        }
+    }
+}
+
+// Default Trigger    
+ul.drop-menu li {
+    display: none; // HIDE
+}
+
+li:hover > ul.drop-menu li {
+    display: block; // SHOW
 } 
+
+
+
+// MENU 1 ---------------
 
 embed {
     position:absolute;
