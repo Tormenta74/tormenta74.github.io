@@ -1,0 +1,90 @@
+---
+# My own styles
+---
+
+/// 
+
+#content-container 
+    margin: 0
+    padding: 50px
+
+#navigate 
+    width: 100%
+    text-align: center
+
+    * button 
+        font-size: 175%
+        width: 100%
+        height: 100%
+        border-width: 0
+        background-color: inherit
+        &:hover 
+            cursor: pointer
+
+    > ul 
+        width: 100%
+        list-style: none
+        padding: 0
+        margin: 0
+        display: inline-block
+        background: #333
+
+        > li 
+            float: left
+            width: 25%
+            height: 65px
+            line-height: 65px
+            position: relative
+            text-decoration: none
+            font-size: 14px
+            cursor: pointer
+
+            &:hover 
+                background: #444
+            
+
+            button 
+                color: #EEE
+
+
+ul.drop-menu 
+    list-style-type: none
+    position: absolute
+    top: 100%
+    left: 0%
+    width: 100%
+    padding: 0
+    margin: 0
+    background: #33F
+
+    li 
+        button 
+            line-height: 65px
+            color: #001
+        
+        &:hover 
+            background: #AAA
+        
+        &:last-child 
+            border-radius: 0px 0px 5px 5px
+            overflow: hidden
+
+
+// Default Trigger    
+ul.drop-menu li button 
+    display: none // HIDE
+
+
+li:hover > ul.drop-menu li button 
+    display: block // SHOW
+ 
+
+// Animations
+
+embed 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
